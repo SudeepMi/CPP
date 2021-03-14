@@ -1,3 +1,4 @@
+//Write a program in c++ to overload a function called power to calculate a^b and (a+b)^c
 #include<iostream>
 #include<math.h>
 
