@@ -1,3 +1,5 @@
+//Write a program in c++ to read number of students and then marks of each student. Display entered marks and their average.
+//Use dynamic memory allocation to reserve memory to store marks of each student
 #include <iostream>
 using namespace std;
 int main(){
