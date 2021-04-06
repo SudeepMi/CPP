@@ -4,6 +4,26 @@
 #include <iostream>
 using namespace std;
 
+class Employee;
+
+int main(){
+    Employee emp[5];
+    cout<<"\t\t ***** Enter employee details *****"<<endl;
+    for (int i = 0; i < 5; i++)
+    {
+        cout<<"\t\t # Employee #"<<i+1<<endl;
+        emp[i].read();
+    }
+
+    cout<<"\t\t ***** Displaying employee details *****"<<endl;
+    for (int i = 0; i < 5; i++)
+    {
+        cout<<"\t\t # Employee #"<<i+1<<endl;
+        emp[i].display();
+    }
+     return 0;
+}
+
 class Employee{
     public:
     int ID;
@@ -27,21 +47,3 @@ class Employee{
        
     }
 };
-
-int main(){
-    Employee emp[5];
-    cout<<"\t\t ***** Enter employee details *****"<<endl;
-    for (int i = 0; i < 5; i++)
-    {
-        cout<<"\t\t # Employee #"<<i+1<<endl;
-        emp[i].read();
-    }
-
-    cout<<"\t\t ***** Displaying employee details *****"<<endl;
-    for (int i = 0; i < 5; i++)
-    {
-        cout<<"\t\t # Employee #"<<i+1<<endl;
-        emp[i].display();
-    }
-     return 0;
-}

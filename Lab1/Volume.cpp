@@ -4,6 +4,16 @@
 #include <iostream>
 using namespace std;
 
+class Box;
+
+int main(){
+    Box b;
+    b.ReadData();
+    cout<<"volume = "<<b.Volume()<<endl;
+    return 0;
+
+}
+
 class Box{
     private:
     float length;
@@ -23,11 +33,3 @@ class Box{
     }
 
 };
-
-int main(){
-    Box b;
-    b.ReadData();
-    cout<<"volume = "<<b.Volume()<<endl;
-    return 0;
-
-}
